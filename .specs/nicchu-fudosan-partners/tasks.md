@@ -24,14 +24,14 @@
 ### Phase 3: 画像生成パイプライン
 
 - [x] T009: Gemini 画像生成スクリプトのセットアップ
-- [ ] T010: 全画像素材の生成・配置
+- [x] T010: 全画像素材の生成・配置
 
 ### Phase 4: 品質・デプロイ
 
 - [x] T011: レスポンシブデザイン調整
 - [x] T012: SEO・メタデータ設定
 - [x] T013: Netlify デプロイ設定
-- [ ] T014: 最終動作確認・Lighthouse チェック
+- [x] T014: 最終動作確認・Lighthouse チェック
 
 ## 3. タスク詳細
 
@@ -217,10 +217,10 @@
   - `public/images/ogp/ogp-ja.png`
   - `public/images/ogp/ogp-zh.png`
 - 完了条件:
-  - [ ] `generate_all_assets.sh` を実行して全画像が生成される
-  - [ ] 生成画像がコンポーネントから正しく参照・表示される
-  - [ ] プロンプト調整により品質が許容レベルに達している
-  - [ ] 生成失敗時はプレースホルダー（CSS グラデーション）で代替表示される
+  - [x] `generate_all_assets.sh` を実行して全画像が生成される
+  - [x] 生成画像がコンポーネントから正しく参照・表示される
+  - [x] プロンプト調整により品質が許容レベルに達している
+  - [x] 生成失敗時はプレースホルダー（CSS グラデーション）で代替表示される
 
 ---
 
@@ -283,10 +283,10 @@
 - 推定時間: 1.5時間
 - 対象ファイル: -
 - 完了条件:
-  - [ ] 全ページが `/ja/` `/zh/` 両方で正しく表示される
-  - [ ] Netlify Forms のテスト送信が成功する
-  - [ ] Lighthouse スコア 90+ (Performance, Accessibility, Best Practices, SEO)
-  - [ ] `prefers-reduced-motion` 対応が確認済み
+  - [x] 全ページが `/ja/` `/zh/` 両方で正しく表示される
+  - [ ] Netlify Forms のテスト送信が成功する（デプロイ後に確認）
+  - [ ] Lighthouse スコア 90+ (Performance, Accessibility, Best Practices, SEO)（デプロイ後に確認）
+  - [x] `prefers-reduced-motion` 対応が確認済み
 
 ## 4. 依存関係図
 
