@@ -9,7 +9,7 @@
 
 ### Phase 1: プロジェクト基盤
 
-- [ ] T001: Next.js プロジェクト初期セットアップ
+- [x] T001: Next.js プロジェクト初期セットアップ
 - [ ] T002: 多言語ルーティング基盤の実装
 - [ ] T003: 共通レイアウト（Header/Footer）の実装
 
@@ -43,10 +43,10 @@
 - 推定時間: 1時間
 - 対象ファイル: `package.json`, `next.config.ts`, `tailwind.config.ts`, `tsconfig.json`
 - 完了条件:
-  - [ ] `create-next-app` で TypeScript + Tailwind CSS のプロジェクトが作成済み
-  - [ ] Framer Motion がインストール済み
-  - [ ] `next.config.ts` に `output: "export"` が設定済み
-  - [ ] `npm run build` が正常に完了する
+  - [x] `create-next-app` で TypeScript + Tailwind CSS のプロジェクトが作成済み
+  - [x] Framer Motion がインストール済み
+  - [x] `next.config.ts` に `output: "export"` が設定済み
+  - [x] `npm run build` が正常に完了する
 
 ---
 
