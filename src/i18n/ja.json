@@ -1,0 +1,70 @@
+{
+  "common": {
+    "company_name": "日中不動産パートナーズ株式会社",
+    "nav": {
+      "home": "トップ",
+      "about": "会社概要",
+      "contact": "お問い合わせ"
+    },
+    "lang_switch": "中文"
+  },
+  "home": {
+    "hero_title": "日本と中国をつなぐ\n不動産パートナー",
+    "hero_subtitle": "中国人投資家の皆様に、日本の不動産投資をワンストップでサポートいたします",
+    "services_title": "サービス一覧",
+    "service_consulting_title": "投資コンサルティング",
+    "service_consulting_desc": "日本の不動産市場に精通した専門家が、投資戦略の立案から物件選定までサポートいたします。",
+    "service_brokerage_title": "不動産仲介",
+    "service_brokerage_desc": "日中両言語対応のスタッフが、契約手続きから物件管理まで一貫してお手伝いいたします。",
+    "service_viewing_title": "内見サポート",
+    "service_viewing_desc": "日本全国の物件を現地で丁寧にご案内。通訳付きで安心して内見いただけます。",
+    "cta_title": "まずはお気軽にご相談ください",
+    "cta_subtitle": "日本の不動産投資に関するご質問・ご相談を承ります",
+    "cta_button": "お問い合わせはこちら"
+  },
+  "about": {
+    "page_title": "会社概要",
+    "mission_title": "企業理念",
+    "mission_text": "日本と中国の架け橋となり、不動産を通じて双方の発展に貢献します。言葉や文化の壁を超え、信頼と誠実をモットーに、最適な不動産ソリューションをご提供いたします。",
+    "company_title": "会社情報",
+    "company_name_label": "商号",
+    "company_name_value": "日中不動産パートナーズ株式会社",
+    "representative_label": "代表取締役",
+    "representative_value": "太田 翔子",
+    "business_label": "事業内容",
+    "business_value": "不動産投資コンサルティング、不動産仲介、内見サポート",
+    "address_label": "所在地",
+    "address_value": "東京都"
+  },
+  "contact": {
+    "page_title": "お問い合わせ",
+    "description": "以下のフォームからお気軽にお問い合わせください。担当者より折り返しご連絡いたします。",
+    "name_label": "お名前",
+    "name_placeholder": "山田 太郎",
+    "email_label": "メールアドレス",
+    "email_placeholder": "example@email.com",
+    "phone_label": "電話番号（任意）",
+    "phone_placeholder": "090-1234-5678",
+    "category_label": "お問い合わせ種別",
+    "category_consulting": "投資コンサルティング",
+    "category_brokerage": "不動産仲介",
+    "category_viewing": "内見サポート",
+    "category_other": "その他",
+    "message_label": "お問い合わせ内容",
+    "message_placeholder": "お問い合わせ内容をご記入ください",
+    "submit": "送信する",
+    "required": "必須",
+    "optional": "任意",
+    "success_title": "送信完了",
+    "success_message": "お問い合わせありがとうございます。担当者より折り返しご連絡いたします。",
+    "error_name": "お名前を入力してください",
+    "error_email": "メールアドレスを入力してください",
+    "error_email_format": "正しいメールアドレスの形式で入力してください",
+    "error_category": "お問い合わせ種別を選択してください",
+    "error_message": "お問い合わせ内容を入力してください"
+  },
+  "footer": {
+    "copyright": "© 2026 日中不動産パートナーズ株式会社",
+    "all_rights": "All Rights Reserved."
+  }
+}

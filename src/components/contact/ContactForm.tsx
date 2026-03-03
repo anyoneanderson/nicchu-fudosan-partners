@@ -1,0 +1,210 @@
+"use client";
+
+import { useState, type FormEvent } from "react";
+
+type Dict = {
+  contact: {
+    name_label: string;
+    name_placeholder: string;
+    email_label: string;
+    email_placeholder: string;
+    phone_label: string;
+    phone_placeholder: string;
+    category_label: string;
+    category_consulting: string;
+    category_brokerage: string;
+    category_viewing: string;
+    category_other: string;
+    message_label: string;
+    message_placeholder: string;
+    submit: string;
+    required: string;
+    optional: string;
+    success_title: string;
+    success_message: string;
+    error_name: string;
+    error_email: string;
+    error_email_format: string;
+    error_category: string;
+    error_message: string;
+  };
+  [key: string]: unknown;
+};
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const ContactForm = ({ dict }: { dict: Dict }) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const validate = (formData: FormData): Record<string, string> => {
+    const errs: Record<string, string> = {};
+    if (!formData.get("name")) errs.name = dict.contact.error_name;
+    const email = formData.get("email") as string;
+    if (!email) {
+      errs.email = dict.contact.error_email;
+    } else if (!EMAIL_REGEX.test(email)) {
+      errs.email = dict.contact.error_email_format;
+    }
+    if (!formData.get("category")) errs.category = dict.contact.error_category;
+    if (!formData.get("message")) errs.message = dict.contact.error_message;
+    return errs;
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const formData = new FormData(e.currentTarget);
+    const validationErrors = validate(formData);
+
+    if (Object.keys(validationErrors).length > 0) {
+      e.preventDefault();
+      setErrors(validationErrors);
+      return;
+    }
+
+    setSubmitted(true);
+  };
+
+  if (submitted) {
+    return (
+      <div className="text-center py-12">
+        <div className="text-5xl mb-4">&#10003;</div>
+        <h2 className="text-2xl font-bold text-primary mb-2">
+          {dict.contact.success_title}
+        </h2>
+        <p className="text-gray-600">{dict.contact.success_message}</p>
+      </div>
+    );
+  }
+
+  const categories = [
+    { value: "consulting", label: dict.contact.category_consulting },
+    { value: "brokerage", label: dict.contact.category_brokerage },
+    { value: "viewing", label: dict.contact.category_viewing },
+    { value: "other", label: dict.contact.category_other },
+  ];
+
+  const inputClass =
+    "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary";
+
+  return (
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <input name="bot-field" />
+      </p>
+
+      <div className="space-y-6">
+        {/* 氏名 */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {dict.contact.name_label}
+            <span className="text-red-500 text-xs ml-1">
+              {dict.contact.required}
+            </span>
+          </label>
+          <input
+            type="text"
+            name="name"
+            placeholder={dict.contact.name_placeholder}
+            className={inputClass}
+          />
+          {errors.name && (
+            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+          )}
+        </div>
+
+        {/* メール */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {dict.contact.email_label}
+            <span className="text-red-500 text-xs ml-1">
+              {dict.contact.required}
+            </span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            placeholder={dict.contact.email_placeholder}
+            className={inputClass}
+          />
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
+        </div>
+
+        {/* 電話番号 */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {dict.contact.phone_label}
+            <span className="text-gray-400 text-xs ml-1">
+              {dict.contact.optional}
+            </span>
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder={dict.contact.phone_placeholder}
+            className={inputClass}
+          />
+        </div>
+
+        {/* 種別 */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {dict.contact.category_label}
+            <span className="text-red-500 text-xs ml-1">
+              {dict.contact.required}
+            </span>
+          </label>
+          <select name="category" className={inputClass} defaultValue="">
+            <option value="" disabled>
+              ---
+            </option>
+            {categories.map((cat) => (
+              <option key={cat.value} value={cat.value}>
+                {cat.label}
+              </option>
+            ))}
+          </select>
+          {errors.category && (
+            <p className="text-red-500 text-sm mt-1">{errors.category}</p>
+          )}
+        </div>
+
+        {/* 内容 */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {dict.contact.message_label}
+            <span className="text-red-500 text-xs ml-1">
+              {dict.contact.required}
+            </span>
+          </label>
+          <textarea
+            name="message"
+            rows={5}
+            placeholder={dict.contact.message_placeholder}
+            className={inputClass}
+          />
+          {errors.message && (
+            <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+          )}
+        </div>
+
+        <button
+          type="submit"
+          className="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-light transition-colors"
+        >
+          {dict.contact.submit}
+        </button>
+      </div>
+    </form>
+  );
+};
+
+export default ContactForm;
