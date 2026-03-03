@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nicchu-fudosan.netlify.app/sitemap.xml

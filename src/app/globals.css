@@ -6,18 +6,10 @@
   --color-accent: #c4933f;
   --color-accent-light: #d4a85a;
   --color-bg-light: #f5f7fa;
+  --font-sans: var(--font-noto-sans-jp), var(--font-noto-sans-sc),
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-family:
-    "Noto Sans JP",
-    "Noto Sans SC",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
 }

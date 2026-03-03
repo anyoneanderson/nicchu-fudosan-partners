@@ -23,14 +23,14 @@
 
 ### Phase 3: 画像生成パイプライン
 
-- [ ] T009: Gemini 画像生成スクリプトのセットアップ
+- [x] T009: Gemini 画像生成スクリプトのセットアップ
 - [ ] T010: 全画像素材の生成・配置
 
 ### Phase 4: 品質・デプロイ
 
-- [ ] T011: レスポンシブデザイン調整
-- [ ] T012: SEO・メタデータ設定
-- [ ] T013: Netlify デプロイ設定
+- [x] T011: レスポンシブデザイン調整
+- [x] T012: SEO・メタデータ設定
+- [x] T013: Netlify デプロイ設定
 - [ ] T014: 最終動作確認・Lighthouse チェック
 
 ## 3. タスク詳細
@@ -193,11 +193,11 @@
   - `scripts/requirements.txt`
   - `.env.example`
 - 完了条件:
-  - [ ] `scripts/generate_image.py` が google-genai SDK で画像生成できる
-  - [ ] `scripts/prompts.json` に全7画像のプロンプトが定義されている
-  - [ ] `scripts/generate_all_assets.sh` で一括生成が動作する
-  - [ ] Python venv のセットアップが正常に完了する
-  - [ ] API キー未設定時にエラーメッセージが表示される（クラッシュしない）
+  - [x] `scripts/generate_image.py` が google-genai SDK で画像生成できる
+  - [x] `scripts/prompts.json` に全7画像のプロンプトが定義されている
+  - [x] `scripts/generate_all_assets.sh` で一括生成が動作する
+  - [x] Python venv のセットアップが正常に完了する
+  - [x] API キー未設定時にエラーメッセージが表示される（クラッシュしない）
 - 並列実行: T002〜T007 と同時実行可能
 
 ---
@@ -232,9 +232,9 @@
 - 推定時間: 2時間
 - 対象ファイル: 各コンポーネント
 - 完了条件:
-  - [ ] モバイル（375px）、タブレット（768px）、デスクトップ（1024px）で崩れがない
-  - [ ] ハンバーガーメニューがモバイルで正しく動作する
-  - [ ] アニメーションがモバイルでもスムーズに動作する
+  - [x] モバイル（375px）、タブレット（768px）、デスクトップ（1024px）で崩れがない
+  - [x] ハンバーガーメニューがモバイルで正しく動作する
+  - [x] アニメーションがモバイルでもスムーズに動作する
 
 ---
 
@@ -249,11 +249,11 @@
   - 各ページの `generateMetadata`
   - `public/robots.txt`
 - 完了条件:
-  - [ ] 各ページに title, description, OGP メタタグが設定されている
-  - [ ] `<html lang>` が言語に応じて動的に設定されている
-  - [ ] `hreflang` で `/ja/` ⇄ `/zh/` の関係が明示されている
-  - [ ] OGP画像（ogp-ja.png / ogp-zh.png）が正しく参照されている
-  - [ ] `robots.txt` と `sitemap.xml` が生成される
+  - [x] 各ページに title, description, OGP メタタグが設定されている
+  - [x] `<html lang>` が言語に応じて動的に設定されている
+  - [x] `hreflang` で `/ja/` ⇄ `/zh/` の関係が明示されている
+  - [x] OGP画像（ogp-ja.png / ogp-zh.png）が正しく参照されている
+  - [x] `robots.txt` と `sitemap.xml` が生成される
 - 並列実行: T011 と同時実行可能
 
 ---
@@ -267,10 +267,10 @@
 - 対象ファイル:
   - `netlify.toml`
 - 完了条件:
-  - [ ] `netlify.toml` にビルドコマンド、公開ディレクトリが設定されている
-  - [ ] `/` → `/ja/` のリダイレクトが設定されている
-  - [ ] Netlify Forms の通知設定方法がドキュメント化されている
-  - [ ] `npm run build` の成果物が `out/` に正しく出力される
+  - [x] `netlify.toml` にビルドコマンド、公開ディレクトリが設定されている
+  - [x] `/` → `/ja/` のリダイレクトが設定されている
+  - [x] Netlify Forms の通知設定方法がドキュメント化されている
+  - [x] `npm run build` の成果物が `out/` に正しく出力される
 - 並列実行: T002〜T010 と同時実行可能
 
 ---

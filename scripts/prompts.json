@@ -1,0 +1,37 @@
+{
+  "hero-bg": {
+    "prompt": "Modern abstract cityscape blending Tokyo and Shanghai skylines, professional real estate theme, blue and gold color scheme, clean geometric patterns, suitable for corporate website hero background, photorealistic, wide aspect ratio 16:9",
+    "output": "public/images/hero/hero-bg.png",
+    "size": "1920x1080"
+  },
+  "service-consulting": {
+    "prompt": "Professional illustration of real estate investment consulting, business meeting between Japanese and Chinese professionals, modern office setting, warm and trustworthy atmosphere, clean flat design style",
+    "output": "public/images/services/service-consulting.png",
+    "size": "800x600"
+  },
+  "service-brokerage": {
+    "prompt": "Professional illustration of real estate brokerage, property viewing and negotiation, Japanese real estate market, modern apartment building, clean flat design style",
+    "output": "public/images/services/service-brokerage.png",
+    "size": "800x600"
+  },
+  "service-viewing": {
+    "prompt": "Professional illustration of property viewing support for Chinese investors in Japan, guided tour of Japanese residential property, welcoming atmosphere, clean flat design style",
+    "output": "public/images/services/service-viewing.png",
+    "size": "800x600"
+  },
+  "about-mission": {
+    "prompt": "Abstract illustration representing Japan-China business partnership bridge, cherry blossom and plum blossom motifs, professional and harmonious, corporate style",
+    "output": "public/images/about/about-mission.png",
+    "size": "1200x800"
+  },
+  "ogp-ja": {
+    "prompt": "Professional OGP image for Japanese-Chinese real estate company, company name '日中不動産パートナーズ', blue and gold corporate color scheme, modern design, 1200x630",
+    "output": "public/images/ogp/ogp-ja.png",
+    "size": "1200x630"
+  },
+  "ogp-zh": {
+    "prompt": "Professional OGP image for Japanese-Chinese real estate company, company name '日中不动产合伙人', blue and gold corporate color scheme, modern design, 1200x630",
+    "output": "public/images/ogp/ogp-zh.png",
+    "size": "1200x630"
+  }
+}
