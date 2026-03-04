@@ -84,7 +84,7 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
   ];
 
   const inputClass =
-    "w-full px-4 py-3 bg-bg-tertiary border border-border text-text-primary focus:outline-none focus:border-accent transition-colors";
+    "w-full px-4 py-3 bg-white border border-border text-text-primary focus:outline-none focus:border-accent transition-colors";
 
   return (
     <form
@@ -198,7 +198,7 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
 
         <button
           type="submit"
-          className="w-full py-4 border border-accent text-accent tracking-widest uppercase text-sm hover:bg-accent hover:text-bg-primary transition-all duration-300"
+          className="w-full py-4 bg-accent text-white tracking-widest uppercase text-sm hover:bg-accent-light transition-all duration-300"
         >
           {dict.contact.submit}
         </button>

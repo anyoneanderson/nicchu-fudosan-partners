@@ -13,7 +13,7 @@ export default async function ContactPage({
 
   return (
     <div>
-      {/* ダークヒーローセクション */}
+      {/* ヒーローセクション */}
       <section className="pt-32 pb-20 bg-bg-secondary">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-sm tracking-widest uppercase text-accent mb-4">

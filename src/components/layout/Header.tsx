@@ -35,14 +35,16 @@ const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-bg-primary/85 backdrop-blur-md border-b border-border"
+          ? "bg-white/95 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link
           href={`/${lang}/`}
-          className="text-lg font-light tracking-wider text-text-primary whitespace-nowrap"
+          className={`text-lg font-light tracking-wider whitespace-nowrap transition-colors duration-300 ${
+            scrolled ? "text-text-primary" : "text-white"
+          }`}
         >
           {dict.common.company_name}
         </Link>
@@ -53,14 +55,22 @@ const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm tracking-wider text-text-secondary hover:text-accent transition-colors"
+              className={`text-sm tracking-wider transition-colors duration-300 ${
+                scrolled
+                  ? "text-text-secondary hover:text-accent"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               {item.label}
             </Link>
           ))}
           <Link
             href={`/${otherLang}/`}
-            className="text-sm px-4 py-1.5 border border-border text-text-secondary hover:border-accent hover:text-accent transition-colors tracking-wider"
+            className={`text-sm px-4 py-1.5 border tracking-wider transition-all duration-300 ${
+              scrolled
+                ? "border-border text-text-secondary hover:border-accent hover:text-accent"
+                : "border-white/40 text-white/80 hover:border-white hover:text-white"
+            }`}
           >
             {dict.common.lang_switch}
           </Link>
@@ -74,13 +84,13 @@ const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
         >
           <div className="w-6 flex flex-col gap-1.5">
             <span
-              className={`block h-0.5 bg-text-primary transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+              className={`block h-0.5 transition-transform ${scrolled ? "bg-text-primary" : "bg-white"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
             />
             <span
-              className={`block h-0.5 bg-text-primary transition-opacity ${menuOpen ? "opacity-0" : ""}`}
+              className={`block h-0.5 transition-opacity ${scrolled ? "bg-text-primary" : "bg-white"} ${menuOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`block h-0.5 bg-text-primary transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+              className={`block h-0.5 transition-transform ${scrolled ? "bg-text-primary" : "bg-white"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
             />
           </div>
         </button>
@@ -88,7 +98,7 @@ const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
 
       {/* モバイルメニュー */}
       {menuOpen && (
-        <div className="md:hidden bg-bg-primary/95 backdrop-blur-lg border-t border-border py-4">
+        <div className="md:hidden bg-white/95 backdrop-blur-lg border-t border-border py-4">
           {navItems.map((item) => (
             <Link
               key={item.href}

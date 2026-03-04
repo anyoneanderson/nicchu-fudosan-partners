@@ -26,7 +26,7 @@ const CompanyInfo = ({ dict }: { dict: Dict }) => {
   ];
 
   return (
-    <section className="py-32 bg-bg-secondary">
+    <section className="py-32">
       <div className="max-w-4xl mx-auto px-6">
         <FadeInSection>
           <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-12">
@@ -40,7 +40,7 @@ const CompanyInfo = ({ dict }: { dict: Dict }) => {
               <tbody>
                 {items.map((item) => (
                   <tr key={item.label} className="border-b border-border last:border-b-0">
-                    <th className="bg-bg-tertiary px-6 py-5 text-left text-sm font-normal tracking-wider text-accent w-1/3">
+                    <th className="bg-bg-secondary px-6 py-5 text-left text-sm font-normal tracking-wider text-text-secondary w-1/3">
                       {item.label}
                     </th>
                     <td className="px-6 py-5 text-text-primary">

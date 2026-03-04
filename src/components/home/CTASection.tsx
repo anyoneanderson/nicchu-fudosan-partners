@@ -15,13 +15,13 @@ type Dict = {
 
 const CTASection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
   return (
-    <section className="py-32 relative">
+    <section className="py-32 bg-bg-secondary relative">
       {/* ゴールドアクセントライン */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-px bg-accent" />
 
       <div className="max-w-4xl mx-auto px-6 text-center">
         <FadeInSection>
-          <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-6">
+          <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-6 text-text-primary">
             {dict.home.cta_title}
           </h2>
           <p className="text-text-secondary mb-12">
@@ -29,7 +29,7 @@ const CTASection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
           </p>
           <Link
             href={`/${lang}/contact`}
-            className="inline-block px-8 py-3 border border-accent text-accent tracking-widest uppercase text-sm hover:bg-accent hover:text-bg-primary transition-all duration-300"
+            className="inline-block px-8 py-3 bg-accent text-white tracking-widest uppercase text-sm hover:bg-accent-light transition-all duration-300"
           >
             {dict.home.cta_button}
           </Link>

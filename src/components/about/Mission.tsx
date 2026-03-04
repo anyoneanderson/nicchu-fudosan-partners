@@ -18,14 +18,13 @@ const Mission = ({ dict }: { dict: Dict }) => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <FadeInSection>
-            <div className="relative h-64 md:h-96 overflow-hidden rounded-sm">
+            <div className="relative h-64 md:h-96 overflow-hidden">
               <ImageWithFallback
                 src="/images/about/about-mission.png"
                 alt={dict.about.mission_title}
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-black/30" />
             </div>
           </FadeInSection>
 
@@ -33,7 +32,7 @@ const Mission = ({ dict }: { dict: Dict }) => {
             <p className="text-sm tracking-widest uppercase text-accent mb-4">
               {dict.about.mission_label}
             </p>
-            <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-8">
+            <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-8 text-text-primary">
               {dict.about.mission_title}
             </h2>
             <p className="text-text-secondary leading-loose text-lg">

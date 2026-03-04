@@ -47,7 +47,7 @@ const ServiceOverview = ({ dict }: { dict: Dict }) => {
           <p className="text-sm tracking-widest uppercase text-accent mb-4">
             {dict.home.services_label}
           </p>
-          <h2 className="text-3xl md:text-5xl font-light tracking-wide">
+          <h2 className="text-3xl md:text-5xl font-light tracking-wide text-text-primary">
             {dict.home.services_title}
           </h2>
         </FadeInSection>
@@ -63,15 +63,13 @@ const ServiceOverview = ({ dict }: { dict: Dict }) => {
           >
             <div className="max-w-6xl mx-auto px-6">
               <FadeInSection>
-                <div
-                  className={`grid md:grid-cols-2 gap-16 items-center ${isReversed ? "md:direction-rtl" : ""}`}
-                >
+                <div className="grid md:grid-cols-2 gap-16 items-center">
                   {/* テキスト */}
                   <div className={isReversed ? "md:order-2" : ""}>
                     <span className="text-8xl font-extralight text-accent/20 block leading-none">
                       {service.number}
                     </span>
-                    <h3 className="text-2xl font-light tracking-wide mt-4 mb-6">
+                    <h3 className="text-2xl font-light tracking-wide mt-4 mb-6 text-text-primary">
                       {dict.home[service.titleKey]}
                     </h3>
                     <p className="text-text-secondary leading-relaxed">
@@ -81,7 +79,7 @@ const ServiceOverview = ({ dict }: { dict: Dict }) => {
 
                   {/* 画像 */}
                   <div
-                    className={`relative aspect-[4/3] overflow-hidden rounded-sm ${isReversed ? "md:order-1" : ""}`}
+                    className={`relative aspect-[4/3] overflow-hidden ${isReversed ? "md:order-1" : ""}`}
                   >
                     <ImageWithFallback
                       src={service.image}
@@ -89,7 +87,6 @@ const ServiceOverview = ({ dict }: { dict: Dict }) => {
                       fill
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-black/30" />
                   </div>
                 </div>
               </FadeInSection>

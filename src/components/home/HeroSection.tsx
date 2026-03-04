@@ -28,13 +28,13 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* コンテンツ */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.p
-          className="text-sm tracking-widest uppercase text-accent mb-6"
+          className="text-sm tracking-widest uppercase text-accent-light mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: ANIMATION_DURATION }}
@@ -42,7 +42,7 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
           {dict.home.hero_label}
         </motion.p>
         <motion.h1
-          className="text-5xl md:text-7xl font-light tracking-wider leading-tight mb-8 whitespace-pre-line"
+          className="text-5xl md:text-7xl font-light tracking-wider leading-tight mb-8 text-white whitespace-pre-line"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: ANIMATION_DURATION, delay: 0.2 }}
@@ -50,7 +50,7 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
           {dict.home.hero_title}
         </motion.h1>
         <motion.p
-          className="text-lg text-text-secondary leading-relaxed mb-12 max-w-2xl mx-auto"
+          className="text-lg text-white/70 leading-relaxed mb-12 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: ANIMATION_DURATION, delay: 0.4 }}
@@ -64,7 +64,7 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
         >
           <Link
             href={`/${lang}/contact`}
-            className="inline-block px-8 py-3 border border-accent text-accent tracking-widest uppercase text-sm hover:bg-accent hover:text-bg-primary transition-all duration-300"
+            className="inline-block px-8 py-3 bg-white text-text-primary tracking-widest uppercase text-sm hover:bg-accent hover:text-white transition-all duration-300"
           >
             {dict.home.cta_button}
           </Link>
@@ -84,7 +84,7 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
           fill="none"
           stroke="currentColor"
           strokeWidth="1.5"
-          className="text-text-muted"
+          className="text-white/50"
         >
           <path d="M7 13l5 5 5-5M7 7l5 5 5-5" />
         </svg>
