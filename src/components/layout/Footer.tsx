@@ -42,12 +42,6 @@ const Footer = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
               >
                 {dict.common.nav.about}
               </Link>
-              <Link
-                href={`/${lang}/contact`}
-                className="block text-text-secondary text-sm hover:text-accent transition-colors"
-              >
-                {dict.common.nav.contact}
-              </Link>
             </nav>
           </div>
 
