@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2d5a8e;
+  --color-accent: #c4933f;
+  --color-accent-light: #d4a85a;
+  --color-bg-light: #f5f7fa;
+  --font-sans: var(--font-noto-sans-jp), var(--font-noto-sans-sc),
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

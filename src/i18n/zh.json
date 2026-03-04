@@ -1,0 +1,70 @@
+{
+  "common": {
+    "company_name": "日中不动产合伙人株式会社",
+    "nav": {
+      "home": "首页",
+      "about": "公司概要",
+      "contact": "联系我们"
+    },
+    "lang_switch": "日本語"
+  },
+  "home": {
+    "hero_title": "连接日本与中国的\n不动产合作伙伴",
+    "hero_subtitle": "我们帮助您从零开始建立面向中文圈客户的销售体制",
+    "services_title": "服务一览",
+    "service_consulting_title": "投资咨询",
+    "service_consulting_desc": "精通日本不动产市场的专家，从投资战略制定到物件选定，全程为您提供支持。",
+    "service_brokerage_title": "不动产中介",
+    "service_brokerage_desc": "日中双语工作人员，从合同手续到物件管理，提供一贯的服务支持。",
+    "service_viewing_title": "看房支持",
+    "service_viewing_desc": "覆盖日本全国的物件，现场细致引导。配备翻译，让您安心看房。",
+    "cta_title": "欢迎随时咨询",
+    "cta_subtitle": "我们接受关于日本不动产投资的各类咨询",
+    "cta_button": "立即咨询"
+  },
+  "about": {
+    "page_title": "公司概要",
+    "mission_title": "企业理念",
+    "mission_text": "成为日本与中国的桥梁，通过不动产为双方的发展做出贡献。跨越语言和文化的障碍，以信赖和诚实为宗旨，提供最优质的不动产解决方案。",
+    "company_title": "公司信息",
+    "company_name_label": "公司名称",
+    "company_name_value": "日中不动产合伙人株式会社",
+    "representative_label": "代表取缔役",
+    "representative_value": "太田 翔子",
+    "business_label": "业务内容",
+    "business_value": "不动产投资咨询、不动产中介、看房支持",
+    "address_label": "地址",
+    "address_value": "东京都"
+  },
+  "contact": {
+    "page_title": "联系我们",
+    "description": "请通过以下表单随时与我们联系。我们的工作人员将尽快回复您。",
+    "name_label": "姓名",
+    "name_placeholder": "王 小明",
+    "email_label": "电子邮件",
+    "email_placeholder": "example@email.com",
+    "phone_label": "电话号码（选填）",
+    "phone_placeholder": "090-1234-5678",
+    "category_label": "咨询类别",
+    "category_consulting": "投资咨询",
+    "category_brokerage": "不动产中介",
+    "category_viewing": "看房支持",
+    "category_other": "其他",
+    "message_label": "咨询内容",
+    "message_placeholder": "请填写咨询内容",
+    "submit": "提交",
+    "required": "必填",
+    "optional": "选填",
+    "success_title": "提交成功",
+    "success_message": "感谢您的咨询。我们的工作人员将尽快与您联系。",
+    "error_name": "请输入姓名",
+    "error_email": "请输入电子邮件地址",
+    "error_email_format": "请输入正确的电子邮件格式",
+    "error_category": "请选择咨询类别",
+    "error_message": "请输入咨询内容"
+  },
+  "footer": {
+    "copyright": "© 2026 日中不动产合伙人株式会社",
+    "all_rights": "All Rights Reserved."
+  }
+}
