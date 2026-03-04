@@ -11,7 +11,9 @@
   "home": {
     "hero_title": "连接日本与中国的\n不动产合作伙伴",
     "hero_subtitle": "我们帮助您从零开始建立面向中文圈客户的销售体制",
+    "hero_label": "日中不动产合伙人",
     "services_title": "服务一览",
+    "services_label": "Services",
     "service_consulting_title": "投资咨询",
     "service_consulting_desc": "精通日本不动产市场的专家，从投资战略制定到物件选定，全程为您提供支持。",
     "service_brokerage_title": "不动产中介",
@@ -24,7 +26,9 @@
   },
   "about": {
     "page_title": "公司概要",
+    "page_label": "About Us",
     "mission_title": "企业理念",
+    "mission_label": "Our Mission",
     "mission_text": "成为日本与中国的桥梁，通过不动产为双方的发展做出贡献。跨越语言和文化的障碍，以信赖和诚实为宗旨，提供最优质的不动产解决方案。",
     "company_title": "公司信息",
     "company_name_label": "公司名称",
@@ -38,6 +42,7 @@
   },
   "contact": {
     "page_title": "联系我们",
+    "page_label": "Contact",
     "description": "请通过以下表单随时与我们联系。我们的工作人员将尽快回复您。",
     "name_label": "姓名",
     "name_placeholder": "王 小明",
@@ -65,6 +70,9 @@
   },
   "footer": {
     "copyright": "© 2026 日中不动产合伙人株式会社",
-    "all_rights": "All Rights Reserved."
+    "all_rights": "All Rights Reserved.",
+    "nav_label": "Navigation",
+    "contact_label": "Contact",
+    "address": "东京都"
   }
 }

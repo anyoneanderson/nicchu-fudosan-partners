@@ -10,16 +10,15 @@ type Dict = {
   home: {
     hero_title: string;
     hero_subtitle: string;
-  };
-  common: {
-    nav: { contact: string };
+    hero_label: string;
+    cta_button: string;
   };
   [key: string]: unknown;
 };
 
 const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* 背景画像 */}
       <div className="absolute inset-0">
         <ImageWithFallback
@@ -29,13 +28,21 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-primary/70" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
 
       {/* コンテンツ */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <motion.p
+          className="text-sm tracking-widest uppercase text-accent mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: ANIMATION_DURATION }}
+        >
+          {dict.home.hero_label}
+        </motion.p>
         <motion.h1
-          className="text-4xl md:text-6xl font-bold mb-6 leading-tight whitespace-pre-line"
+          className="text-5xl md:text-7xl font-light tracking-wider leading-tight mb-8 whitespace-pre-line"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: ANIMATION_DURATION, delay: 0.2 }}
@@ -43,7 +50,7 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
           {dict.home.hero_title}
         </motion.h1>
         <motion.p
-          className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto"
+          className="text-lg text-text-secondary leading-relaxed mb-12 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: ANIMATION_DURATION, delay: 0.4 }}
@@ -57,12 +64,31 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
         >
           <Link
             href={`/${lang}/contact`}
-            className="inline-block px-8 py-4 bg-accent text-white font-bold rounded-lg hover:bg-accent-light transition-colors text-lg"
+            className="inline-block px-8 py-3 border border-accent text-accent tracking-widest uppercase text-sm hover:bg-accent hover:text-bg-primary transition-all duration-300"
           >
-            {dict.common.nav.contact}
+            {dict.home.cta_button}
           </Link>
         </motion.div>
       </div>
+
+      {/* スクロール誘導 */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        animate={{ y: [0, 8, 0] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          className="text-text-muted"
+        >
+          <path d="M7 13l5 5 5-5M7 7l5 5 5-5" />
+        </svg>
+      </motion.div>
     </section>
   );
 };

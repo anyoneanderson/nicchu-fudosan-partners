@@ -11,7 +11,9 @@
   "home": {
     "hero_title": "日本と中国をつなぐ\n不動産パートナー",
     "hero_subtitle": "中国語圏のお客様向け販売体制をゼロから整えるお手伝いをします",
+    "hero_label": "日中不動産パートナーズ",
     "services_title": "サービス一覧",
+    "services_label": "Services",
     "service_consulting_title": "投資コンサルティング",
     "service_consulting_desc": "日本の不動産市場に精通した専門家が、投資戦略の立案から物件選定までサポートいたします。",
     "service_brokerage_title": "不動産仲介",
@@ -24,7 +26,9 @@
   },
   "about": {
     "page_title": "会社概要",
+    "page_label": "About Us",
     "mission_title": "企業理念",
+    "mission_label": "Our Mission",
     "mission_text": "日本と中国の架け橋となり、不動産を通じて双方の発展に貢献します。言葉や文化の壁を超え、信頼と誠実をモットーに、最適な不動産ソリューションをご提供いたします。",
     "company_title": "会社情報",
     "company_name_label": "商号",
@@ -38,6 +42,7 @@
   },
   "contact": {
     "page_title": "お問い合わせ",
+    "page_label": "Contact",
     "description": "以下のフォームからお気軽にお問い合わせください。担当者より折り返しご連絡いたします。",
     "name_label": "お名前",
     "name_placeholder": "山田 太郎",
@@ -65,6 +70,9 @@
   },
   "footer": {
     "copyright": "© 2026 日中不動産パートナーズ株式会社",
-    "all_rights": "All Rights Reserved."
+    "all_rights": "All Rights Reserved.",
+    "nav_label": "Navigation",
+    "contact_label": "Contact",
+    "address": "東京都"
   }
 }

@@ -8,14 +8,14 @@ import Footer from "@/components/layout/Footer";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "700"],
   variable: "--font-noto-sans-jp",
   display: "swap",
 });
 
 const notoSansSC = Noto_Sans_SC({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "700"],
   variable: "--font-noto-sans-sc",
   display: "swap",
 });
@@ -28,12 +28,12 @@ const metaByLang: Record<Lang, { title: string; description: string }> = {
   ja: {
     title: "日中不動産パートナーズ株式会社",
     description:
-      "中国人投資家向け日本不動産投資のワンストップサービス。投資コンサルティング、不動産仲介、内見サポートを提供。",
+      "中国語圏のお客様向け販売体制をゼロから整えるお手伝いをします。投資コンサルティング、不動産仲介、内見サポートを提供。",
   },
   zh: {
     title: "日中不动产合伙人株式会社",
     description:
-      "面向中国投资者的日本不动产投资一站式服务。提供投资咨询、不动产中介、看房支持。",
+      "我们帮助您从零开始建立面向中文圈客户的销售体制。提供投资咨询、不动产中介、看房支持。",
   },
 };
 
@@ -84,10 +84,10 @@ export default async function LangLayout({
 
   return (
     <html lang={lang} className={`${notoSansJP.variable} ${notoSansSC.variable}`}>
-      <body className="min-h-screen flex flex-col bg-white text-gray-900 antialiased font-sans">
+      <body className="min-h-screen flex flex-col bg-bg-primary text-text-primary antialiased font-sans">
         <Header lang={lang} dict={dict} />
         <main className="flex-1">{children}</main>
-        <Footer dict={dict} />
+        <Footer dict={dict} lang={lang} />
       </body>
     </html>
   );

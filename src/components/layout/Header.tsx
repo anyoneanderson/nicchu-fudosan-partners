@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import type { Lang } from "@/i18n/dictionaries";
 
@@ -15,7 +15,15 @@ type Dict = {
 
 const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const otherLang = lang === "ja" ? "zh" : "ja";
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
     { href: `/${lang}/`, label: dict.common.nav.home },
@@ -24,29 +32,35 @@ const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
-      <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-bg-primary/85 backdrop-blur-md border-b border-border"
+          : "bg-transparent"
+      }`}
+    >
+      <nav className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link
           href={`/${lang}/`}
-          className="text-lg font-bold text-primary whitespace-nowrap"
+          className="text-lg font-light tracking-wider text-text-primary whitespace-nowrap"
         >
           {dict.common.company_name}
         </Link>
 
         {/* デスクトップナビ */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-gray-700 hover:text-primary transition-colors"
+              className="text-sm tracking-wider text-text-secondary hover:text-accent transition-colors"
             >
               {item.label}
             </Link>
           ))}
           <Link
             href={`/${otherLang}/`}
-            className="text-sm px-3 py-1 border border-primary text-primary rounded hover:bg-primary hover:text-white transition-colors"
+            className="text-sm px-4 py-1.5 border border-border text-text-secondary hover:border-accent hover:text-accent transition-colors tracking-wider"
           >
             {dict.common.lang_switch}
           </Link>
@@ -60,13 +74,13 @@ const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
         >
           <div className="w-6 flex flex-col gap-1.5">
             <span
-              className={`block h-0.5 bg-gray-700 transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+              className={`block h-0.5 bg-text-primary transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
             />
             <span
-              className={`block h-0.5 bg-gray-700 transition-opacity ${menuOpen ? "opacity-0" : ""}`}
+              className={`block h-0.5 bg-text-primary transition-opacity ${menuOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`block h-0.5 bg-gray-700 transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+              className={`block h-0.5 bg-text-primary transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
             />
           </div>
         </button>
@@ -74,12 +88,12 @@ const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
 
       {/* モバイルメニュー */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 py-4">
+        <div className="md:hidden bg-bg-primary/95 backdrop-blur-lg border-t border-border py-4">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="block px-6 py-3 text-gray-700 hover:bg-gray-50"
+              className="block px-6 py-3 text-text-secondary hover:text-accent transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {item.label}
@@ -87,7 +101,7 @@ const Header = ({ lang, dict }: { lang: Lang; dict: Dict }) => {
           ))}
           <Link
             href={`/${otherLang}/`}
-            className="block px-6 py-3 text-primary font-medium"
+            className="block px-6 py-3 text-accent"
             onClick={() => setMenuOpen(false)}
           >
             {dict.common.lang_switch}
