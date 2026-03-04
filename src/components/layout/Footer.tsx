@@ -23,17 +23,7 @@ const Footer = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
       <div className="h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
 
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
-          {/* 会社情報 */}
-          <div>
-            <p className="text-lg font-light tracking-wider mb-4">
-              {dict.common.company_name}
-            </p>
-            <p className="text-text-muted text-sm leading-relaxed">
-              {dict.footer.address}
-            </p>
-          </div>
-
+        <div className="grid md:grid-cols-2 gap-12">
           {/* ナビゲーション */}
           <div>
             <p className="text-sm tracking-widest uppercase text-accent mb-4">

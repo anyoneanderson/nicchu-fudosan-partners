@@ -64,7 +64,7 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
         >
           <Link
             href={`/${lang}/contact`}
-            className="inline-block px-8 py-3 bg-white text-text-primary tracking-widest uppercase text-sm hover:bg-accent hover:text-white transition-all duration-300"
+            className="inline-block px-8 py-3 bg-accent text-white tracking-widest uppercase text-sm hover:bg-accent-light transition-all duration-300"
           >
             {dict.home.cta_button}
           </Link>
