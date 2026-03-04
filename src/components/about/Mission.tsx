@@ -18,7 +18,7 @@ const Mission = ({ dict }: { dict: Dict }) => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <FadeInSection>
-            <div className="relative h-64 md:h-96 overflow-hidden">
+            <div className="relative aspect-[3/2] overflow-hidden">
               <ImageWithFallback
                 src="/images/about/about-mission.png"
                 alt={dict.about.mission_title}

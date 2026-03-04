@@ -41,9 +41,24 @@ def generate_image(prompt: str, output_path: str, size: str = "1024x1024") -> bo
             if part.inline_data is not None:
                 image = Image.open(io.BytesIO(part.inline_data.data))
 
-                # サイズ調整
-                w, h = size.split("x")
-                image = image.resize((int(w), int(h)), Image.LANCZOS)
+                # アスペクト比を維持してクロップ→リサイズ
+                target_w, target_h = int(size.split("x")[0]), int(size.split("x")[1])
+                target_ratio = target_w / target_h
+                src_w, src_h = image.size
+                src_ratio = src_w / src_h
+
+                if src_ratio > target_ratio:
+                    # 横長すぎ → 左右をクロップ
+                    new_w = int(src_h * target_ratio)
+                    left = (src_w - new_w) // 2
+                    image = image.crop((left, 0, left + new_w, src_h))
+                elif src_ratio < target_ratio:
+                    # 縦長すぎ → 上下をクロップ
+                    new_h = int(src_w / target_ratio)
+                    top = (src_h - new_h) // 2
+                    image = image.crop((0, top, src_w, top + new_h))
+
+                image = image.resize((target_w, target_h), Image.LANCZOS)
 
                 # 出力ディレクトリ作成
                 Path(output_path).parent.mkdir(parents=True, exist_ok=True)

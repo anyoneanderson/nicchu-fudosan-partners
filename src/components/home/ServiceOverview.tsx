@@ -7,12 +7,16 @@ type Dict = {
   home: {
     services_title: string;
     services_label: string;
-    service_consulting_title: string;
-    service_consulting_desc: string;
-    service_brokerage_title: string;
-    service_brokerage_desc: string;
-    service_viewing_title: string;
-    service_viewing_desc: string;
+    service_strategy_title: string;
+    service_strategy_desc: string;
+    service_leads_title: string;
+    service_leads_desc: string;
+    service_contract_title: string;
+    service_contract_desc: string;
+    service_culture_title: string;
+    service_culture_desc: string;
+    service_chinese_title: string;
+    service_chinese_desc: string;
   };
   [key: string]: unknown;
 };
@@ -20,21 +24,33 @@ type Dict = {
 const services = [
   {
     number: "01",
-    titleKey: "service_consulting_title" as const,
-    descKey: "service_consulting_desc" as const,
-    image: "/images/services/service-consulting.png",
+    titleKey: "service_strategy_title" as const,
+    descKey: "service_strategy_desc" as const,
+    image: "/images/services/service-strategy.png",
   },
   {
     number: "02",
-    titleKey: "service_brokerage_title" as const,
-    descKey: "service_brokerage_desc" as const,
-    image: "/images/services/service-brokerage.png",
+    titleKey: "service_leads_title" as const,
+    descKey: "service_leads_desc" as const,
+    image: "/images/services/service-leads.png",
   },
   {
     number: "03",
-    titleKey: "service_viewing_title" as const,
-    descKey: "service_viewing_desc" as const,
-    image: "/images/services/service-viewing.png",
+    titleKey: "service_contract_title" as const,
+    descKey: "service_contract_desc" as const,
+    image: "/images/services/service-contract.png",
+  },
+  {
+    number: "04",
+    titleKey: "service_culture_title" as const,
+    descKey: "service_culture_desc" as const,
+    image: "/images/services/service-culture.png",
+  },
+  {
+    number: "05",
+    titleKey: "service_chinese_title" as const,
+    descKey: "service_chinese_desc" as const,
+    image: "/images/services/service-chinese.png",
   },
 ];
 
