@@ -1,36 +1,46 @@
 {
   "hero-bg": {
-    "prompt": "Modern abstract cityscape blending Tokyo and Shanghai skylines, professional real estate theme, blue and gold color scheme, clean geometric patterns, suitable for corporate website hero background, photorealistic, wide aspect ratio 16:9",
+    "prompt": "Generate a wide landscape image in 16:9 aspect ratio. A cinematic aerial photograph of Tokyo's skyline at twilight, shot from a high-rise building rooftop. The city lights are beginning to glow in warm gold and cool blue tones against a deep navy sky. Modern glass skyscrapers reflect the fading sunset, creating a luxurious urban atmosphere. Shot with a wide-angle lens, f/2.8 aperture, creating a slight depth of field effect. The overall mood is sophisticated, aspirational, and premium — like an editorial spread in a luxury real estate magazine. Dark moody tones with subtle warm highlights. Photorealistic, ultra-detailed, 8K quality. No text, no letters, no logos, no watermarks in the image.",
     "output": "public/images/hero/hero-bg.png",
     "size": "1920x1080"
   },
-  "service-consulting": {
-    "prompt": "Professional illustration of real estate investment consulting, business meeting between Japanese and Chinese professionals, modern office setting, warm and trustworthy atmosphere, clean flat design style",
-    "output": "public/images/services/service-consulting.png",
+  "service-strategy": {
+    "prompt": "Generate a landscape image in 4:3 aspect ratio. A sophisticated strategy planning scene in a modern Tokyo office. A whiteboard with colorful sticky notes and a market analysis chart is visible, while two professionals in business attire discuss over a large table covered with documents and a laptop showing graphs. The office has floor-to-ceiling windows with a blurred cityscape. Warm natural light from windows, clean minimalist interior. The atmosphere conveys strategic thinking and expertise. Photorealistic editorial photography, NOT an illustration. No text, no letters, no watermarks in the image.",
+    "output": "public/images/services/service-strategy.png",
     "size": "800x600"
   },
-  "service-brokerage": {
-    "prompt": "Professional illustration of real estate brokerage, property viewing and negotiation, Japanese real estate market, modern apartment building, clean flat design style",
-    "output": "public/images/services/service-brokerage.png",
+  "service-leads": {
+    "prompt": "Generate a landscape image in 4:3 aspect ratio. A modern digital marketing workspace scene. A sleek desk with a large monitor showing social media analytics dashboards, a smartphone displaying a Chinese social media app interface, and a tablet with a property listing. Warm ambient lighting, clean modern office environment with plants. The scene conveys digital marketing expertise and cross-border customer acquisition. Shot with a 50mm lens, shallow depth of field. Photorealistic editorial photography, NOT an illustration. No text, no letters, no watermarks in the image.",
+    "output": "public/images/services/service-leads.png",
     "size": "800x600"
   },
-  "service-viewing": {
-    "prompt": "Professional illustration of property viewing support for Chinese investors in Japan, guided tour of Japanese residential property, welcoming atmosphere, clean flat design style",
-    "output": "public/images/services/service-viewing.png",
+  "service-contract": {
+    "prompt": "Generate a landscape image in 4:3 aspect ratio. An elegant contract signing scene in a premium office. Two professionals — one Japanese and one Chinese — are at a polished conference table reviewing bilingual documents. A fountain pen rests on official papers. The lighting is warm and professional, with soft golden tones from large windows. The mood is formal yet welcoming, conveying trust and reliability in cross-border business. Shot with an 85mm lens, shallow depth of field. Photorealistic editorial photography, NOT an illustration. No text, no letters, no watermarks in the image.",
+    "output": "public/images/services/service-contract.png",
+    "size": "800x600"
+  },
+  "service-culture": {
+    "prompt": "Generate a landscape image in 4:3 aspect ratio. A warm cross-cultural business interaction scene. A Japanese businesswoman and a Chinese businessman are sharing tea in a meeting room that blends Japanese and Chinese design elements — a simple ikebana arrangement and Chinese calligraphy scroll on the wall. They are smiling and engaged in conversation, conveying mutual respect and cultural understanding. Soft warm lighting, professional yet culturally rich atmosphere. Shot with a 50mm lens. Photorealistic editorial photography, NOT an illustration. No text, no letters, no watermarks in the image.",
+    "output": "public/images/services/service-culture.png",
+    "size": "800x600"
+  },
+  "service-chinese": {
+    "prompt": "Generate a landscape image in 4:3 aspect ratio. A professional translation and localization workspace. A modern desk with dual monitors — one showing a Japanese website and the other showing the same website translated into Chinese. A professional woman is reviewing printed bilingual brochures spread on the desk. The office is bright, modern, and organized. Clean design elements suggest attention to detail and quality. Warm natural light from windows. Shot with a 35mm lens. Photorealistic editorial photography, NOT an illustration. No text, no letters, no watermarks in the image.",
+    "output": "public/images/services/service-chinese.png",
     "size": "800x600"
   },
   "about-mission": {
-    "prompt": "Abstract illustration representing Japan-China business partnership bridge, cherry blossom and plum blossom motifs, professional and harmonious, corporate style",
+    "prompt": "Generate a landscape image in 3:2 aspect ratio. An artistic photograph symbolizing the connection between Japan and China through architecture. A split composition: on the left, a traditional Japanese wooden temple gate (torii) bathed in soft golden light; on the right, a modern Shanghai glass skyscraper reflecting sunset colors. The two halves blend seamlessly in the center through a soft gradient of warm gold light, symbolizing partnership and bridge-building. Cherry blossom petals drift subtly in the air. The overall tone is dark and sophisticated with warm gold accents — like a luxury brand advertisement. Shot with a telephoto lens creating compressed perspective, shallow depth of field. Cinematic color grading with deep shadows and rich warm highlights. Photorealistic, NOT an illustration. No text, no letters, no watermarks in the image.",
     "output": "public/images/about/about-mission.png",
     "size": "1200x800"
   },
   "ogp-ja": {
-    "prompt": "Professional OGP image for Japanese-Chinese real estate company, company name '日中不動産パートナーズ', blue and gold corporate color scheme, modern design, 1200x630",
+    "prompt": "Generate a wide landscape banner image in approximately 1.9:1 aspect ratio. A premium corporate OGP banner image with a dark, sophisticated background. An elegant abstract composition featuring subtle gold geometric lines and curves against a deep black background, evoking luxury and trust. A faint silhouette of Tokyo Tower and modern skyscrapers appears in the lower portion, barely visible through a dark gradient. The overall aesthetic is minimalist and high-end, reminiscent of a luxury financial services brand. The text \"日中不動産パートナーズ\" is displayed in clean, modern white Japanese typography centered in the upper third. Below it, smaller text reads \"Japan × China Real Estate Partners\" in light gold. The font style is thin and elegant with wide letter spacing. Photorealistic with graphic design elements, ultra-clean composition.",
     "output": "public/images/ogp/ogp-ja.png",
     "size": "1200x630"
   },
   "ogp-zh": {
-    "prompt": "Professional OGP image for Japanese-Chinese real estate company, company name '日中不动产合伙人', blue and gold corporate color scheme, modern design, 1200x630",
+    "prompt": "Generate a wide landscape banner image in approximately 1.9:1 aspect ratio. A premium corporate OGP banner image with a dark, sophisticated background. An elegant abstract composition featuring subtle gold geometric lines and curves against a deep black background, evoking luxury and trust. A faint silhouette of Tokyo Tower and modern skyscrapers appears in the lower portion, barely visible through a dark gradient. The overall aesthetic is minimalist and high-end, reminiscent of a luxury financial services brand. The text \"日中不动产合伙人\" is displayed in clean, modern white Chinese typography centered in the upper third. Below it, smaller text reads \"Japan × China Real Estate Partners\" in light gold. The font style is thin and elegant with wide character spacing. Photorealistic with graphic design elements, ultra-clean composition.",
     "output": "public/images/ogp/ogp-zh.png",
     "size": "1200x630"
   }

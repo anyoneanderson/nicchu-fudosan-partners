@@ -66,12 +66,12 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
 
   if (submitted) {
     return (
-      <div className="text-center py-12">
-        <div className="text-5xl mb-4">&#10003;</div>
-        <h2 className="text-2xl font-bold text-primary mb-2">
+      <div className="text-center py-16">
+        <div className="text-5xl mb-4 text-accent">&#10003;</div>
+        <h2 className="text-2xl font-light tracking-wide mb-4">
           {dict.contact.success_title}
         </h2>
-        <p className="text-gray-600">{dict.contact.success_message}</p>
+        <p className="text-text-secondary">{dict.contact.success_message}</p>
       </div>
     );
   }
@@ -84,7 +84,7 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
   ];
 
   const inputClass =
-    "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary";
+    "w-full px-4 py-3 bg-white border border-border text-text-primary focus:outline-none focus:border-accent transition-colors";
 
   return (
     <form
@@ -99,12 +99,12 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
         <input name="bot-field" />
       </p>
 
-      <div className="space-y-6">
+      <div className="space-y-8">
         {/* 氏名 */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm tracking-wider text-text-secondary mb-2">
             {dict.contact.name_label}
-            <span className="text-red-500 text-xs ml-1">
+            <span className="text-accent text-xs ml-2">
               {dict.contact.required}
             </span>
           </label>
@@ -115,15 +115,15 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
             className={inputClass}
           />
           {errors.name && (
-            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+            <p className="text-accent text-sm mt-2">{errors.name}</p>
           )}
         </div>
 
         {/* メール */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm tracking-wider text-text-secondary mb-2">
             {dict.contact.email_label}
-            <span className="text-red-500 text-xs ml-1">
+            <span className="text-accent text-xs ml-2">
               {dict.contact.required}
             </span>
           </label>
@@ -134,15 +134,15 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
             className={inputClass}
           />
           {errors.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+            <p className="text-accent text-sm mt-2">{errors.email}</p>
           )}
         </div>
 
         {/* 電話番号 */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm tracking-wider text-text-secondary mb-2">
             {dict.contact.phone_label}
-            <span className="text-gray-400 text-xs ml-1">
+            <span className="text-text-muted text-xs ml-2">
               {dict.contact.optional}
             </span>
           </label>
@@ -156,9 +156,9 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
 
         {/* 種別 */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm tracking-wider text-text-secondary mb-2">
             {dict.contact.category_label}
-            <span className="text-red-500 text-xs ml-1">
+            <span className="text-accent text-xs ml-2">
               {dict.contact.required}
             </span>
           </label>
@@ -173,15 +173,15 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
             ))}
           </select>
           {errors.category && (
-            <p className="text-red-500 text-sm mt-1">{errors.category}</p>
+            <p className="text-accent text-sm mt-2">{errors.category}</p>
           )}
         </div>
 
         {/* 内容 */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm tracking-wider text-text-secondary mb-2">
             {dict.contact.message_label}
-            <span className="text-red-500 text-xs ml-1">
+            <span className="text-accent text-xs ml-2">
               {dict.contact.required}
             </span>
           </label>
@@ -192,13 +192,13 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
             className={inputClass}
           />
           {errors.message && (
-            <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            <p className="text-accent text-sm mt-2">{errors.message}</p>
           )}
         </div>
 
         <button
           type="submit"
-          className="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-light transition-colors"
+          className="w-full py-4 bg-accent text-white tracking-widest uppercase text-sm hover:bg-accent-light transition-all duration-300"
         >
           {dict.contact.submit}
         </button>

@@ -11,20 +11,28 @@
   "home": {
     "hero_title": "连接日本与中国的\n不动产合作伙伴",
     "hero_subtitle": "我们帮助您从零开始建立面向中文圈客户的销售体制",
+    "hero_label": "日中不动产合伙人",
     "services_title": "服务一览",
-    "service_consulting_title": "投资咨询",
-    "service_consulting_desc": "精通日本不动产市场的专家，从投资战略制定到物件选定，全程为您提供支持。",
-    "service_brokerage_title": "不动产中介",
-    "service_brokerage_desc": "日中双语工作人员，从合同手续到物件管理，提供一贯的服务支持。",
-    "service_viewing_title": "看房支持",
-    "service_viewing_desc": "覆盖日本全国的物件，现场细致引导。配备翻译，让您安心看房。",
+    "services_label": "Services",
+    "service_strategy_title": "面向中文圈的销售战略设计",
+    "service_strategy_desc": "基于中文圈消费者的购买行为和偏好，设计有针对性的销售战略。打造能够触达目标客群的高效销售体制。",
+    "service_leads_title": "集客导线建议",
+    "service_leads_desc": "利用中国SNS和媒体特性，提供集客导线建议。活用微信、小红书等平台，助力获取潜在客户。",
+    "service_contract_title": "合同流程整备",
+    "service_contract_desc": "充分考虑日中商业习惯差异，构建顺畅的合同流程。支持必要文件的多语言化及手续优化。",
+    "service_culture_title": "文化差异调整",
+    "service_culture_desc": "理解日中商业文化差异，为双方提供最优沟通方式的建议。支持信赖关系的构建。",
+    "service_chinese_title": "中文对应体制构建",
+    "service_chinese_desc": "全面支持网站、资料、接待的中文化。不仅是翻译，更提供能够传达给中文圈客户的表达方式和内容架构建议。",
     "cta_title": "欢迎随时咨询",
     "cta_subtitle": "我们接受关于日本不动产投资的各类咨询",
     "cta_button": "立即咨询"
   },
   "about": {
     "page_title": "公司概要",
+    "page_label": "About Us",
     "mission_title": "企业理念",
+    "mission_label": "Our Mission",
     "mission_text": "成为日本与中国的桥梁，通过不动产为双方的发展做出贡献。跨越语言和文化的障碍，以信赖和诚实为宗旨，提供最优质的不动产解决方案。",
     "company_title": "公司信息",
     "company_name_label": "公司名称",
@@ -38,6 +46,7 @@
   },
   "contact": {
     "page_title": "联系我们",
+    "page_label": "Contact",
     "description": "请通过以下表单随时与我们联系。我们的工作人员将尽快回复您。",
     "name_label": "姓名",
     "name_placeholder": "王 小明",
@@ -65,6 +74,9 @@
   },
   "footer": {
     "copyright": "© 2026 日中不动产合伙人株式会社",
-    "all_rights": "All Rights Reserved."
+    "all_rights": "All Rights Reserved.",
+    "nav_label": "Navigation",
+    "contact_label": "Contact",
+    "address": "东京都"
   }
 }

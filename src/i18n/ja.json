@@ -11,20 +11,28 @@
   "home": {
     "hero_title": "日本と中国をつなぐ\n不動産パートナー",
     "hero_subtitle": "中国語圏のお客様向け販売体制をゼロから整えるお手伝いをします",
+    "hero_label": "日中不動産パートナーズ",
     "services_title": "サービス一覧",
-    "service_consulting_title": "投資コンサルティング",
-    "service_consulting_desc": "日本の不動産市場に精通した専門家が、投資戦略の立案から物件選定までサポートいたします。",
-    "service_brokerage_title": "不動産仲介",
-    "service_brokerage_desc": "日中両言語対応のスタッフが、契約手続きから物件管理まで一貫してお手伝いいたします。",
-    "service_viewing_title": "内見サポート",
-    "service_viewing_desc": "日本全国の物件を現地で丁寧にご案内。通訳付きで安心して内見いただけます。",
+    "services_label": "Services",
+    "service_strategy_title": "中国語圏向け販売戦略の設計",
+    "service_strategy_desc": "中国語圏の購買行動・嗜好を踏まえた販売戦略を設計。ターゲット層に響くアプローチで、効果的な販売体制を構築します。",
+    "service_leads_title": "集客導線のアドバイス",
+    "service_leads_desc": "中国のSNS・メディア特性を活かした集客導線をご提案。WeChat、RED（小紅書）などを活用し、見込み顧客の獲得を支援します。",
+    "service_contract_title": "契約フローの整備",
+    "service_contract_desc": "日中間の商習慣の違いを踏まえ、スムーズな契約フローを構築。必要書類の多言語化や手続きの最適化をサポートします。",
+    "service_culture_title": "文化ギャップの調整",
+    "service_culture_desc": "日本と中国のビジネス文化の違いを理解し、双方にとって最適なコミュニケーション方法をアドバイス。信頼関係の構築を支援します。",
+    "service_chinese_title": "中国語対応の仕組み作り",
+    "service_chinese_desc": "Webサイト・資料・接客対応の中国語化を総合的にサポート。翻訳だけでなく、中国語圏のお客様に伝わる表現・構成をご提案します。",
     "cta_title": "まずはお気軽にご相談ください",
     "cta_subtitle": "日本の不動産投資に関するご質問・ご相談を承ります",
     "cta_button": "お問い合わせはこちら"
   },
   "about": {
     "page_title": "会社概要",
+    "page_label": "About Us",
     "mission_title": "企業理念",
+    "mission_label": "Our Mission",
     "mission_text": "日本と中国の架け橋となり、不動産を通じて双方の発展に貢献します。言葉や文化の壁を超え、信頼と誠実をモットーに、最適な不動産ソリューションをご提供いたします。",
     "company_title": "会社情報",
     "company_name_label": "商号",
@@ -38,6 +46,7 @@
   },
   "contact": {
     "page_title": "お問い合わせ",
+    "page_label": "Contact",
     "description": "以下のフォームからお気軽にお問い合わせください。担当者より折り返しご連絡いたします。",
     "name_label": "お名前",
     "name_placeholder": "山田 太郎",
@@ -65,6 +74,9 @@
   },
   "footer": {
     "copyright": "© 2026 日中不動産パートナーズ株式会社",
-    "all_rights": "All Rights Reserved."
+    "all_rights": "All Rights Reserved.",
+    "nav_label": "Navigation",
+    "contact_label": "Contact",
+    "address": "東京都"
   }
 }
