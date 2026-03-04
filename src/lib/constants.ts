@@ -6,9 +6,14 @@ export const DEFAULT_LANG: Lang = "ja";
 export const SITE_URL = "https://nicchu-fudosan.netlify.app";
 
 export const CORPORATE_COLOR = {
-  primary: "#1e3a5f",
+  bgPrimary: "#0a0a0a",
+  bgSecondary: "#111111",
+  bgTertiary: "#1a1a1a",
+  textPrimary: "#ffffff",
+  textSecondary: "#a0a0a0",
   accent: "#c4933f",
-  light: "#f5f7fa",
+  accentLight: "#d4a85a",
+  border: "#2a2a2a",
 } as const;
 
 export const ANIMATION_DURATION = 0.6;
