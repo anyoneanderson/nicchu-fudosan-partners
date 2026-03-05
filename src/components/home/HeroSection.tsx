@@ -33,14 +33,6 @@ const HeroSection = ({ dict, lang }: { dict: Dict; lang: Lang }) => {
 
       {/* コンテンツ */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <motion.p
-          className="text-sm tracking-widest uppercase text-accent-light mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: ANIMATION_DURATION }}
-        >
-          {dict.home.hero_label}
-        </motion.p>
         <motion.h1
           className="text-5xl md:text-7xl font-light tracking-wider leading-tight mb-8 text-white whitespace-pre-line"
           initial={{ opacity: 0, y: 30 }}
