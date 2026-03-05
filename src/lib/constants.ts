@@ -3,7 +3,7 @@ import type { Lang } from "@/i18n/dictionaries";
 export const SUPPORTED_LANGS: Lang[] = ["ja", "zh"];
 export const DEFAULT_LANG: Lang = "ja";
 
-export const SITE_URL = "https://nicchu-fudosan.netlify.app";
+export const SITE_URL = "https://nicchu-fudosan-partners.netlify.app";
 
 export const CORPORATE_COLOR = {
   bgPrimary: "#ffffff",
