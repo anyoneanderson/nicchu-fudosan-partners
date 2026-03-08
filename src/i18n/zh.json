@@ -3,7 +3,7 @@
     "company_name": "日中不动产合伙人株式会社",
     "nav": {
       "home": "首页",
-      "about": "公司概要",
+      "about": "公司简介",
       "contact": "联系我们"
     },
     "lang_switch": "日本語"
@@ -29,7 +29,7 @@
     "cta_button": "立即咨询"
   },
   "about": {
-    "page_title": "公司概要",
+    "page_title": "公司简介",
     "page_label": "About Us",
     "mission_title": "企业理念",
     "mission_label": "Our Mission",
@@ -42,7 +42,7 @@
     "business_label": "业务内容",
     "business_value": "中国人来日移居支持、面向国内不动产企业的中国客户引流、不动产中文对应咨询",
     "address_label": "地址",
-    "address_value": "东京都"
+    "address_value": "东京都千代田区岩本町三丁目7番11-602号"
   },
   "contact": {
     "page_title": "联系我们",
@@ -77,6 +77,6 @@
     "all_rights": "All Rights Reserved.",
     "nav_label": "Navigation",
     "contact_label": "Contact",
-    "address": "东京都"
+    "address": "东京都千代田区岩本町三丁目7番11-602号"
   }
 }

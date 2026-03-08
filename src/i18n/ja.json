@@ -42,7 +42,7 @@
     "business_label": "事業内容",
     "business_value": "中国人向け来日移住サポート、国内不動産企業への中国人集客、不動産中国語対応コンサルティング",
     "address_label": "所在地",
-    "address_value": "東京都"
+    "address_value": "東京都千代田区岩本町三丁目7番11‐602号"
   },
   "contact": {
     "page_title": "お問い合わせ",
@@ -77,6 +77,6 @@
     "all_rights": "All Rights Reserved.",
     "nav_label": "Navigation",
     "contact_label": "Contact",
-    "address": "東京都"
+    "address": "東京都千代田区岩本町三丁目7番11‐602号"
   }
 }
