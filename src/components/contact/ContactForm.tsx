@@ -11,9 +11,9 @@ type Dict = {
     phone_label: string;
     phone_placeholder: string;
     category_label: string;
-    category_consulting: string;
-    category_brokerage: string;
-    category_viewing: string;
+    category_relocation: string;
+    category_acquisition: string;
+    category_chinese_consulting: string;
     category_other: string;
     message_label: string;
     message_placeholder: string;
@@ -77,9 +77,9 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
   }
 
   const categories = [
-    { value: "consulting", label: dict.contact.category_consulting },
-    { value: "brokerage", label: dict.contact.category_brokerage },
-    { value: "viewing", label: dict.contact.category_viewing },
+    { value: "relocation", label: dict.contact.category_relocation },
+    { value: "acquisition", label: dict.contact.category_acquisition },
+    { value: "chinese_consulting", label: dict.contact.category_chinese_consulting },
     { value: "other", label: dict.contact.category_other },
   ];
 
