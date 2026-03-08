@@ -30,7 +30,7 @@
     "size": "800x600"
   },
   "about-mission": {
-    "prompt": "Generate a landscape image in 3:2 aspect ratio. An artistic photograph symbolizing the connection between Japan and China through architecture. A split composition: on the left, a traditional Japanese wooden temple gate (torii) bathed in soft golden light; on the right, a modern Shanghai glass skyscraper reflecting sunset colors. The two halves blend seamlessly in the center through a soft gradient of warm gold light, symbolizing partnership and bridge-building. Cherry blossom petals drift subtly in the air. The overall tone is dark and sophisticated with warm gold accents — like a luxury brand advertisement. Shot with a telephoto lens creating compressed perspective, shallow depth of field. Cinematic color grading with deep shadows and rich warm highlights. Photorealistic, NOT an illustration. No text, no letters, no watermarks in the image.",
+    "prompt": "Generate a landscape image in 3:2 aspect ratio. A single seamless cinematic night photograph of two iconic towers in one continuous cityscape. On the left, Tokyo Tower glows in warm orange-red. On the right, the Shanghai Tower (上海中心大厦) rises with cool blue-white lighting. Between them, the city skyline connects naturally with no visible border, dividing line, or panel separation — just one smooth panoramic scene where warm tones gradually shift to cool tones across the frame. Soft pink cherry blossom petals float gently across the entire image. Dark luxurious atmosphere with rich city lights. Photorealistic aerial photography, NOT CG, NOT illustration. No text, no letters, no logos, no watermarks.",
     "output": "public/images/about/about-mission.png",
     "size": "1200x800"
   },
