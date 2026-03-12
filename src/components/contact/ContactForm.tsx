@@ -51,17 +51,26 @@ const ContactForm = ({ dict }: { dict: Dict }) => {
     return errs;
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const validationErrors = validate(formData);
 
     if (Object.keys(validationErrors).length > 0) {
-      e.preventDefault();
       setErrors(validationErrors);
       return;
     }
 
-    setSubmitted(true);
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+      });
+      setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    }
   };
 
   if (submitted) {
